@@ -1,11 +1,11 @@
 import { Link } from 'react-scroll';
 
 
-export default function Menu({ menuOpen, setMenuOpen }){
+export default function Menu({menuOpen}){
 
     return(
         
-        <div className={`menu ${menuOpen ? "open" : ""}`}>
+        <div className={`menu ${menuOpen ? 'open' : ''}`}>
 
                 <ul className="links">
                     

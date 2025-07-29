@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-export default function Sidebar({ menuOpen, setMenuOpen }) {
+export default function Sidebar({ setMenuOpen, menuOpen }) {
 
     const [scrolled, setScrolled] = useState(false)
 
