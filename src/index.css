@@ -328,6 +328,69 @@ body{
   font-weight: 600;
 }
 
+.malala-photo{
+  width: 100%;
+  min-width: 408px;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.info-fundacion{
+  background: #A3D1AF;
+  width: 100%;
+  min-width: 408px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #ffffff;
+  text-align: center;
+  gap: 1.5em;
+}
+
+.logo-asociasion{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.institucion{
+  margin-top: 4em;
+  width: 100%;
+  min-width: 408px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.institution-galery{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  text-align: center;
+}
+
+img{
+  width: 80%;
+  height: auto;
+}
+
+
+
 @keyframes transition{
  from{transform: translateX(100%);}
  to{transform: translateX(0);}
