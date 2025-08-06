@@ -4,8 +4,12 @@ import Sidebar from "./Sidebar"
 import Hero from "./Hero"
 import Menu from "./Menu"
 import Section from "./Section";
+import President from "./President";
+
+
 
 function App() {
+
   const [menuOpen, setMenuOpen] = useState(false); // shared state with toggle menu
 
   return (
@@ -31,6 +35,9 @@ function App() {
     </div>
 
     <Section/>
+
+    <President/>
+    
     
   </>
   );
