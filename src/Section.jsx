@@ -7,7 +7,7 @@ export default function Section() {
             <div className="institution-galery">
 
                 <div className="post">
-                    <img src="/images/imagen7.png" alt="imagen" />
+                    <img className="img-galery" src="/images/imagen7.png" alt="imagen" />
                     <h3>MISIÓN</h3>
                     <p>Apoyar a niños en situacion de pobreza extrema,
                         marginación, población indígena y escasos recursos
@@ -19,7 +19,7 @@ export default function Section() {
                 </div>
 
                 <div className="post">
-                    <img src="/images/imagen8.png" alt="imagen" />
+                    <img  className="img-galery" src="/images/imagen8.png" alt="imagen" />
                     <h3>VISIÓN</h3>
                     <p>
                         Mejorar la calidad de vida de niños y niñas con Parálisis Cerebral
@@ -31,7 +31,7 @@ export default function Section() {
                 </div>
 
                 <div className="post">
-                    <img src="/images/imagen9.png" alt="imagen" />
+                    <img className="img-galery" src="/images/imagen9.png" alt="imagen" />
                     <h3>Valores</h3>
                     <p>
                         •	AMOR •TEMPLANZA •ESPERANZA
