@@ -9,8 +9,6 @@ export default function President() {
     setSelectedId(prevId => (prevId === id ? null : id)); // toggle content
   };
 
-  const selectedParagraph = paragraph.find(p => p.id === selectedId);
-
   return (
     <div className="presidenta-section">
 
@@ -31,13 +29,14 @@ export default function President() {
         <div className="buttons-section">
 
           {paragraph.map((item) => (
+
             <div key={item.id} className={`button-wrapper ${selectedId === item.id ? "active" : ""}`}>
 
               <button
                 className="button"
                 onClick={() => handleClick(item.id)}
               >
-                {selectedId === item.id ? '−' : '+'} {item.title}
+                {selectedId === item.id ? '-' : '+'} {item.title}
 
                 <div className="textos-content">
                   {selectedId === item.id && <p>{item.description}</p>}
@@ -46,6 +45,7 @@ export default function President() {
               </button>
 
             </div>
+            
           ))}
 
         </div>
