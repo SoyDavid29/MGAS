@@ -323,7 +323,7 @@ body{
   align-items: center;
   justify-content: center;
   gap: 2em;
-  padding-top: 3em;
+  padding-top: 5em;
 
   font-weight: 600;
 }
@@ -488,6 +488,240 @@ body{
 .picture{
   width: 80%;
 }
+
+.newsection{
+  margin-top: 3em;
+
+  width: 100%;
+  min-width: 408px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.text-area{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title-newsection{
+ text-align: center;
+}
+
+.section{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2em;
+}
+
+.sect-textos{
+ width: 90%;
+ height: auto;
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+ gap: 1.5em;
+}
+
+.logoey{
+  width: 80%;
+  height: auto;
+}
+
+.donation-section{
+  margin-top: 3em;
+}
+
+.image-donation{
+  width: 80%;
+  height: auto;
+}
+
+.logo-in{
+  width: 80%;
+  height: auto;
+}
+
+.donation-section{
+  width: 90%;
+  height: auto;
+
+  gap: 2em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.img-donation{
+  width: 90%;
+}
+
+.image-donation{
+  width: 80%;
+  height: auto;
+}
+
+.contact-us{
+  width: 100%;
+  min-width: 408px;
+  height: auto;
+
+}
+
+.contact{
+  width: 100%;
+  min-width: 408px;
+  height: auto;
+}
+
+.activities-section{
+  margin: 0 auto;
+  margin-top: 2.5em;
+
+  width: 90%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1em;
+
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1em;
+}
+
+/* FORM */
+
+.form{
+  margin: 0 auto;
+  padding: 1.5em;
+
+  width: 90%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+
+  background: #e0e0e0de;
+
+  
+}
+
+.label-container{
+
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap:1em;
+
+}
+
+input{
+ width: 90%;
+ height: 30px;
+}
+
+.social-media{
+  margin: 0 auto;
+  margin-top: 2.5em;
+  padding: 1.5em;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #360168a9;
+}
+
+.logos-container{
+  margin-top: 2em;
+
+  display: flex;
+  align-items: center;
+  gap: 2em;
+
+}
+
+.logos-rs{
+  width: 2em;
+}
+
+.menu-down{
+  padding: 1em;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.enlaces{
+  
+
+  width: 80%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.back-home{
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-home{
+ margin: 1em;
+ width: 100%;
+}
+
+.home {
+  font-size: 3em; /* or 2rem, etc */
+  color: #a85af0;     /* optional */
+}
+
+
+
+
 
 @keyframes transition{
  from{transform: translateX(100%);}

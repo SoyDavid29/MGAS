@@ -5,6 +5,8 @@ import Hero from "./Hero"
 import Menu from "./Menu"
 import Section from "./Section";
 import President from "./President";
+import Newsection from "./Newsection";
+import Form from "./Form";
 
 
 
@@ -37,7 +39,10 @@ function App() {
     <Section/>
 
     <President/>
+
+    <Newsection form={<Form/>}/>
     
+
     
   </>
   );
