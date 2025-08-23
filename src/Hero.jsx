@@ -34,7 +34,7 @@ export default function Hero() {
             >
                 {images.map((src, i) => (
                     <SwiperSlide key={i}>
-                        <img src={src} alt={`Image ${i}`} style={{ width: "100%" }} />
+                        <img src={src} alt={`Image ${i}`} style={{ width: "100%", height: "100%" }} />
                     </SwiperSlide>
                 ))}
 

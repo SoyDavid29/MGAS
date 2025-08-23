@@ -2,7 +2,7 @@ export default function Section() {
     return (
         <section className="institucion">
 
-            <h1>NUESTRA INSTITUCION</h1>
+            <h1 className="line-tittle">NUESTRA INSTITUCION</h1>
 
             <div className="institution-galery">
 

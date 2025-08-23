@@ -1,49 +1,45 @@
 import { Link } from 'react-scroll';
 
+export default function Menu({ menuOpen, onClose }) {
 
-export default function Menu({menuOpen}){
+  return (
 
-    return(
-        
-        <div className={`menu ${menuOpen ? 'open' : ''}`}>
+    <div className={`menu ${menuOpen ? 'open' : ''}`}>
 
-                <ul className="links">
-                    
-                    <Link className="link" to="start" smooth={true} duration={500}>
-                        Inicio
-                    </Link>
+      <ul className="links">
+        <Link className="link" to="start" smooth={true} duration={500} onClick={onClose}>
+          Inicio
+        </Link>
 
-                    <Link className="link" to="about" smooth={true} duration={500}>
-                        Nosotros
-                    </Link>
+        <Link className="link" to="about" smooth={true} duration={500} onClick={onClose}>
+          Nosotros
+        </Link>
 
-                    <Link className="link" to="technologies" smooth={true} duration={500}>
-                        Presidenta
-                    </Link>
+        <Link className="link" to="president" smooth={true} duration={500} onClick={onClose}>
+          Presidenta
+        </Link>
 
-                    <Link className="link" to="projects" smooth={true} duration={500}>
-                        Auditorias
-                    </Link>
+        <Link className="link" to="auditories" smooth={true} duration={500} onClick={onClose}>
+          Auditorias
+        </Link>
 
-                    <Link className="link" to="contact" smooth={true} duration={500}>
-                        Noticias
-                    </Link>
+        <Link className="link" to="start" smooth={true} duration={500} onClick={onClose}>
+          Noticias
+        </Link>
 
-                    <Link className="link" to="contact" smooth={true} duration={500}>
-                        Donar
-                    </Link>
+        <Link className="link" to="donation" smooth={true} duration={500} onClick={onClose}>
+          Donar
+        </Link>
 
-                    <Link className="link" to="contact" smooth={true} duration={500}>
-                        Galería
-                    </Link>
+        <Link className="link" to="galery" smooth={true} duration={500} onClick={onClose}>
+          Galería
+        </Link>
 
+        <Link className="link" to="contact" smooth={true} duration={500} onClick={onClose}>
+          Contacto
+        </Link>
+      </ul>
 
-                    <Link className="link" to="contact" smooth={true} duration={500}>
-                        Contacto
-                    </Link>
-
-                </ul>
-
-            </div>
-    )
+    </div>
+  );
 }
