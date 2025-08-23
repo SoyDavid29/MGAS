@@ -10,6 +10,10 @@ body{
   height: 150vh;
 }
 
+.line-tittle{
+ border-bottom: #009edb solid 3px;
+}
+
 
 .sidebar{
 
@@ -23,7 +27,7 @@ body{
   align-items: center;
   justify-content: space-around;
 
-  transition: height 0.4s ease-in;
+  transition: height 0.3s ease;
 
   position: fixed;   /* keep it visible on scroll */
   top: 4rem;
@@ -32,8 +36,6 @@ body{
 
   z-index: 999;
   background: white;
-
-
 
 }
 
@@ -104,34 +106,25 @@ body{
   margin: 0 auto;
   margin-top: 7em;
 
-  width: 90%;
+  width: 100%;
   height: auto;
 
-  max-width: 90%;
+  max-width: 1000px;
   min-width: 408px;
 
-  background: #AA77FF;
+  background: #af13ce;
 
   display: flex;
+  align-items: center;
   flex-direction: column;
- 
-  border-radius: 30px;
 
 }
-
 
 .galery{
   width: 100%;
   height: 100%;
 
   position: relative;
-}
-
-.img{
-  object-fit: cover;
-
-  width: 100%;
-  height: 100%;
 }
 
 .tittle{
@@ -149,9 +142,16 @@ body{
   z-index: 10;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px !important;
+  color: rgb(0, 0, 0) !important;      
+}
+
 .texts-container{
 
-  margin-top: 0.5em;
+  margin-top: -40px;
+  z-index: 2;
   width: 100%;
   height: auto;
   padding: 0.8em;
@@ -162,7 +162,7 @@ body{
   justify-content: center;
   gap: 0.5em;
 
-  background: #AA77FF;
+  background: #fabdf5;
 
 }
 
@@ -312,7 +312,7 @@ body{
 
 .menu.open{
   visibility: visible;
-  animation: transition 0.8s ease-in-out;
+  animation: transition 0.4s ease;
 }
   
 
@@ -337,6 +337,7 @@ body{
 }
 
 .info-fundacion{
+  margin-top: -6px;
   background: #A3D1AF;
   width: 100%;
   min-width: 408px;
@@ -554,7 +555,7 @@ body{
 }
 
 .logo-in{
-  width: 80%;
+  width: 50%;
   height: auto;
 }
 
@@ -664,7 +665,13 @@ input{
   flex-direction: column;
   align-items: center;
 
-  background: #360168a9;
+  background: #e0dfdfa9;
+  border-top: solid rgb(196, 193, 193) 2px;
+}
+
+h4{
+  margin-top: 1em;
+  color: rgb(134, 133, 133);
 }
 
 .logos-container{
@@ -685,8 +692,10 @@ input{
   width: 100%;
 
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.8em;
+  
 }
 
 .enlaces{
@@ -696,9 +705,10 @@ input{
   height: auto;
 
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 1em;
+
+
 }
 
 .back-home{
@@ -719,9 +729,64 @@ input{
   color: #a85af0;     /* optional */
 }
 
+.splash-container {
+  background-color: #d0b3eb;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* important so the heart doesn't scroll */
+}
 
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  background: rgb(255, 255, 255);
+  transform: rotate(-45deg) scale(0); /* start tiny */
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: growHeart 3.5s forwards ease-in-out; /* play once */
+}
 
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
 
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
+}
+
+.main-logo {
+  width: 70%;
+  height: auto;
+  z-index: 1;
+  transform: rotate(45deg);
+}
+
+/* keyframes for growing */
+@keyframes growHeart {
+  0% {
+    transform: rotate(-45deg) scale(0);
+  }
+  100% {
+    transform: rotate(-45deg) scale(25); /* adjust this number for full screen */
+  }
+}
 
 @keyframes transition{
  from{transform: translateX(100%);}
